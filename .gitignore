@@ -1,0 +1,9 @@
+# 独立管理的 git 子仓库
+configuration/
+track-screen/
+
+# 备份文件
+backup/
+
+# API 文档（如果是独立仓库）
+api/
