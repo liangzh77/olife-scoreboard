@@ -1,6 +1,2 @@
-# 独立管理的 git 子仓库
-configuration/.git
-track-screen/.git
-
 # 备份文件
 backup/
