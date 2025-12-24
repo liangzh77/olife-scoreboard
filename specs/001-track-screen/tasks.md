@@ -409,3 +409,37 @@ Task T014: "实现组别列表组件 UI in track-screen/components/CourseList/in
 - 每完成一个任务或逻辑组后提交代码
 - 在任意 Checkpoint 停止可验证已完成故事
 - 避免：模糊任务、同文件冲突、跨故事强依赖
+
+---
+
+## Phase 10: 优化与改进 (2024-12-24)
+
+**Purpose**: 布局优化和用户体验改进
+
+### 已完成
+
+- [x] T059 表头多栏显示 in track-screen/components/ResultTable/index.vue
+  - 每栏显示独立的列标题组
+  - 使用 grid 布局与数据栏对齐
+- [x] T060 状态文本简化 in track-screen/components/ResultTable/index.vue
+  - MissingPunch → MP（橙色）
+  - OverTime → OT（黄色）
+  - 添加 getStatusText() 方法
+- [x] T061 字体大小范围扩展 in track-screen/components/SettingsPanel/index.vue
+  - 范围从 20-40 扩展到 10-60 rpx
+- [x] T062 列宽百分比布局 in track-screen/components/ResultTable/index.vue
+  - 改用百分比宽度 + min-width
+  - 解决大字体溢出和小字体空白问题
+- [x] T063 列间距优化 in track-screen/components/ResultTable/index.vue
+  - 添加 1% 列间距 (gap)
+- [x] T064 滚动条样式优化 in track-screen/components/CourseList/index.vue, EventList/index.vue
+  - 简洁半透明滚动条
+  - 使用非 scoped 样式块
+- [x] T065 分页计算优化 in track-screen/utils/pagination.js
+  - 简化行高计算公式
+  - 修复行数计算不准确问题
+- [x] T066 窗口自适应 in track-screen/pages/display/index.vue
+  - 添加 resize 监听
+  - 动态重新计算布局
+
+**Checkpoint**: 布局优化完成，所有核心功能可用
