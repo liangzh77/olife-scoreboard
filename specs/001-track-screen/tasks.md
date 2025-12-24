@@ -17,11 +17,11 @@
 
 **Purpose**: 创建 uni-app 项目骨架和基础配置
 
-- [ ] T001 使用 HBuilderX 或 CLI 初始化 uni-app 项目 in track-screen/
-- [ ] T002 [P] 配置 pages.json 路由（config 和 display 两个页面）in track-screen/pages.json
-- [ ] T003 [P] 配置 manifest.json 应用信息（版本号、横屏模式）in track-screen/manifest.json
-- [ ] T004 [P] 配置全局样式和 rpx 基准 in track-screen/App.vue
-- [ ] T005 创建目录结构（pages/, components/, services/, static/）in track-screen/
+- [x] T001 使用 HBuilderX 或 CLI 初始化 uni-app 项目 in track-screen/
+- [x] T002 [P] 配置 pages.json 路由（config 和 display 两个页面）in track-screen/pages.json
+- [x] T003 [P] 配置 manifest.json 应用信息（版本号、横屏模式）in track-screen/manifest.json
+- [x] T004 [P] 配置全局样式和 rpx 基准 in track-screen/App.vue
+- [x] T005 创建目录结构（pages/, components/, services/, static/）in track-screen/
 
 ---
 
@@ -31,20 +31,20 @@
 
 **⚠️ CRITICAL**: 必须完成此阶段才能开始用户故事开发
 
-- [ ] T006 实现本地存储服务 in track-screen/services/storage.js
+- [x] T006 实现本地存储服务 in track-screen/services/storage.js
   - getConfig() / saveConfig()
   - 默认配置值（apiBaseUrl, pageStayTime, fontSize, columnCount, sponsorInterval, sponsorDuration）
-- [ ] T007 [P] 实现 API 调用服务 in track-screen/services/api.js
+- [x] T007 [P] 实现 API 调用服务 in track-screen/services/api.js
   - getTrackBoardEvents()
   - getTrackingBoard(courseId)
   - 错误处理和响应解析
-- [ ] T008 [P] 实现数据转换工具 in track-screen/utils/transform.js
+- [x] T008 [P] 实现数据转换工具 in track-screen/utils/transform.js
   - transformResults() - API 数据转展示数据
   - formatTime() / formatDuration() / formatDiff() - 时间格式化
-- [ ] T009 [P] 实现分页计算工具 in track-screen/utils/pagination.js
+- [x] T009 [P] 实现分页计算工具 in track-screen/utils/pagination.js
   - calculatePages() - 分栏分页计算
   - calculateRowsPerColumn() - 动态行数计算
-- [ ] T010 实现网络状态监听服务 in track-screen/services/network.js
+- [x] T010 实现网络状态监听服务 in track-screen/services/network.js
   - initNetworkListener()
   - 网络状态变化回调
 
@@ -60,41 +60,41 @@
 
 ### UI 实现（界面优先）
 
-- [ ] T011 [P] [US1] 创建配置页面布局框架 in track-screen/pages/config/index.vue
+- [x] T011 [P] [US1] 创建配置页面布局框架 in track-screen/pages/config/index.vue
   - 顶部状态栏区域
   - 左侧赛事列表区域
   - 右侧组别列表区域
   - 底部按钮区域（开始/退出）
-- [ ] T012 [P] [US1] 实现状态栏组件 UI in track-screen/components/StatusBar/index.vue
+- [x] T012 [P] [US1] 实现状态栏组件 UI in track-screen/components/StatusBar/index.vue
   - 版本号、网络状态、设备IP、数据源URL、最后更新时间
   - 使用模拟数据展示
-- [ ] T013 [P] [US1] 实现赛事列表组件 UI in track-screen/components/EventList/index.vue
+- [x] T013 [P] [US1] 实现赛事列表组件 UI in track-screen/components/EventList/index.vue
   - 列表项样式（赛事名称、状态）
   - 选中状态高亮
   - 使用模拟数据展示
-- [ ] T014 [P] [US1] 实现组别列表组件 UI in track-screen/components/CourseList/index.vue
+- [x] T014 [P] [US1] 实现组别列表组件 UI in track-screen/components/CourseList/index.vue
   - 列表项样式（组别名称、状态）
   - 多选 checkbox 支持
   - 使用模拟数据展示
 
 ### 功能实现
 
-- [ ] T015 [US1] 接入 API 获取赛事列表 in track-screen/pages/config/index.vue
+- [x] T015 [US1] 接入 API 获取赛事列表 in track-screen/pages/config/index.vue
   - 调用 getTrackBoardEvents()
   - 替换模拟数据为真实数据
-- [ ] T016 [US1] 实现赛事选择逻辑 in track-screen/pages/config/index.vue
+- [x] T016 [US1] 实现赛事选择逻辑 in track-screen/pages/config/index.vue
   - 点击赛事更新右侧组别列表
   - 清空之前选中的组别
-- [ ] T017 [US1] 实现组别多选逻辑 in track-screen/pages/config/index.vue
+- [x] T017 [US1] 实现组别多选逻辑 in track-screen/pages/config/index.vue
   - checkbox 勾选/取消
   - selectedCourseIds 状态管理
-- [ ] T018 [US1] 实现开始按钮跳转逻辑 in track-screen/pages/config/index.vue
+- [x] T018 [US1] 实现开始按钮跳转逻辑 in track-screen/pages/config/index.vue
   - 校验至少选择一个组别
   - 保存选择到 storage
   - 跳转到 display 页面并传参
-- [ ] T019 [US1] 实现退出按钮逻辑 in track-screen/pages/config/index.vue
+- [x] T019 [US1] 实现退出按钮逻辑 in track-screen/pages/config/index.vue
   - 条件编译：H5 关闭窗口，App 退出应用
-- [ ] T020 [US1] 实现状态栏真实数据绑定 in track-screen/components/StatusBar/index.vue
+- [x] T020 [US1] 实现状态栏真实数据绑定 in track-screen/components/StatusBar/index.vue
   - 版本号从 manifest.json 读取
   - 网络状态从 network.js 获取
   - 设备 IP 使用 uni API 获取
@@ -111,46 +111,46 @@
 
 ### UI 实现（界面优先）
 
-- [ ] T021 [P] [US2] 创建播放页面布局框架 in track-screen/pages/display/index.vue
+- [x] T021 [P] [US2] 创建播放页面布局框架 in track-screen/pages/display/index.vue
   - 顶部标题区域（赛事名+组别名）
   - 中间成绩表格区域
   - 底部跑马灯区域（占位）
-- [ ] T022 [P] [US2] 实现成绩表格组件 UI in track-screen/components/ResultTable/index.vue
+- [x] T022 [P] [US2] 实现成绩表格组件 UI in track-screen/components/ResultTable/index.vue
   - 表头：名次、号码布、国籍、姓名、出发时间、完赛用时、差值、评估
   - 分栏布局（CSS flexbox/grid）
   - 前三名高亮样式
   - 使用模拟数据展示
-- [ ] T023 [US2] 实现分栏布局自适应 in track-screen/components/ResultTable/index.vue
+- [x] T023 [US2] 实现分栏布局自适应 in track-screen/components/ResultTable/index.vue
   - 根据配置的 columnCount 动态分栏
   - 响应字体大小配置
 
 ### 功能实现
 
-- [ ] T024 [US2] 接入 API 获取成绩数据 in track-screen/pages/display/index.vue
+- [x] T024 [US2] 接入 API 获取成绩数据 in track-screen/pages/display/index.vue
   - 调用 getTrackingBoard(courseId)
   - 使用 transformResults() 转换数据
-- [ ] T025 [US2] 实现数据轮询刷新 in track-screen/pages/display/index.vue
+- [x] T025 [US2] 实现数据轮询刷新 in track-screen/pages/display/index.vue
   - 60 秒间隔自动刷新
   - 使用 DataPoller 类
-- [ ] T026 [US2] 实现分页计算和状态管理 in track-screen/pages/display/index.vue
+- [x] T026 [US2] 实现分页计算和状态管理 in track-screen/pages/display/index.vue
   - 使用 calculatePages() 计算分页
   - currentPageIndex 状态
   - totalPages 计算
-- [ ] T027 [US2] 实现页面自动切换 in track-screen/pages/display/index.vue
+- [x] T027 [US2] 实现页面自动切换 in track-screen/pages/display/index.vue
   - 定时器：每 pageStayTime 秒切换下一页
   - 最后一页后切换到下一个组别
-- [ ] T028 [US2] 实现页面切换动画 in track-screen/pages/display/index.vue
+- [x] T028 [US2] 实现页面切换动画 in track-screen/pages/display/index.vue
   - CSS transition 平滑过渡
   - translateX 滑动效果
-- [ ] T029 [US2] 实现多组别轮播逻辑 in track-screen/pages/display/index.vue
+- [x] T029 [US2] 实现多组别轮播逻辑 in track-screen/pages/display/index.vue
   - 按开始时间排序组别
   - 过滤未开始的组别
   - currentCourseIndex 状态
   - 组别切换动画
-- [ ] T030 [US2] 实现网络异常处理 in track-screen/pages/display/index.vue
+- [x] T030 [US2] 实现网络异常处理 in track-screen/pages/display/index.vue
   - 断网时显示缓存数据
   - 界面提示网络状态异常
-- [ ] T031 [US2] 实现空数据处理 in track-screen/pages/display/index.vue
+- [x] T031 [US2] 实现空数据处理 in track-screen/pages/display/index.vue
   - 无数据时显示"暂无数据"
   - 跳过无数据组别
 
