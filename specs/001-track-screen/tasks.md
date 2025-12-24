@@ -166,25 +166,25 @@
 
 ### UI 实现（界面优先）
 
-- [ ] T032 [P] [US3] 实现跑马灯组件 UI in track-screen/components/Marquee/index.vue
+- [x] T032 [P] [US3] 实现跑马灯组件 UI in track-screen/components/Marquee/index.vue
   - 从右向左滚动动画
   - 可配置滚动速度
   - 使用模拟文本展示
 
 ### 功能实现
 
-- [ ] T033 [US3] 实现事件追踪服务 in track-screen/services/eventTracker.js
+- [x] T033 [US3] 实现事件追踪服务 in track-screen/services/eventTracker.js
   - EventTracker 类
   - detectEvents() - 检测新出发、新完成、前三名变化
   - 事件去重和缓存
-- [ ] T034 [US3] 集成事件追踪到播放页面 in track-screen/pages/display/index.vue
+- [x] T034 [US3] 集成事件追踪到播放页面 in track-screen/pages/display/index.vue
   - 每次数据刷新时调用 detectEvents()
   - 将事件推入队列
-- [ ] T035 [US3] 实现事件队列管理 in track-screen/pages/display/index.vue
+- [x] T035 [US3] 实现事件队列管理 in track-screen/pages/display/index.vue
   - events 队列
   - currentEvent 当前显示
   - 滚动完成后显示下一条
-- [ ] T036 [US3] 实现跑马灯事件绑定 in track-screen/components/Marquee/index.vue
+- [x] T036 [US3] 实现跑马灯事件绑定 in track-screen/components/Marquee/index.vue
   - 接收事件消息 prop
   - 滚动完成事件回调
 
@@ -200,7 +200,7 @@
 
 ### UI 实现（界面优先）
 
-- [ ] T037 [P] [US4] 实现赞助商LOGO全屏组件 UI in track-screen/components/SponsorLogo/index.vue
+- [x] T037 [P] [US4] 实现赞助商LOGO全屏组件 UI in track-screen/components/SponsorLogo/index.vue
   - 全屏覆盖层
   - 居中显示 LOGO 图片
   - 淡入淡出动画
@@ -208,17 +208,17 @@
 
 ### 功能实现
 
-- [ ] T038 [US4] 实现赞助商数据管理 in track-screen/pages/display/index.vue
+- [x] T038 [US4] 实现赞助商数据管理 in track-screen/pages/display/index.vue
   - 临时方案：本地配置 LOGO 列表
   - 预留 API 接口（待后端实现）
-- [ ] T039 [US4] 实现轮播频次计数 in track-screen/pages/display/index.vue
+- [x] T039 [US4] 实现轮播频次计数 in track-screen/pages/display/index.vue
   - roundCount 轮播计数
   - 达到 sponsorInterval 时触发
-- [ ] T040 [US4] 实现LOGO展示逻辑 in track-screen/pages/display/index.vue
+- [x] T040 [US4] 实现LOGO展示逻辑 in track-screen/pages/display/index.vue
   - showingSponsor 状态
   - currentSponsorIndex 索引
   - 展示 sponsorDuration 秒后返回
-- [ ] T041 [US4] 处理LOGO列表为空情况 in track-screen/pages/display/index.vue
+- [x] T041 [US4] 处理LOGO列表为空情况 in track-screen/pages/display/index.vue
   - 跳过LOGO展示环节
   - 直接继续成绩展示
 
@@ -234,7 +234,7 @@
 
 ### UI 实现（界面优先）
 
-- [ ] T042 [P] [US5] 实现参数设置面板组件 UI in track-screen/components/SettingsPanel/index.vue
+- [x] T042 [P] [US5] 实现参数设置面板组件 UI in track-screen/components/SettingsPanel/index.vue
   - 每页停留时间输入框
   - 字体大小选择器（小/中/大）
   - 分栏数量选择器（1-4）
@@ -244,16 +244,16 @@
 
 ### 功能实现
 
-- [ ] T043 [US5] 集成设置面板到配置页面 in track-screen/pages/config/index.vue
+- [x] T043 [US5] 集成设置面板到配置页面 in track-screen/pages/config/index.vue
   - 嵌入 SettingsPanel 组件
   - 双向绑定配置值
-- [ ] T044 [US5] 实现配置值保存逻辑 in track-screen/components/SettingsPanel/index.vue
+- [x] T044 [US5] 实现配置值保存逻辑 in track-screen/components/SettingsPanel/index.vue
   - 修改后调用 saveConfig()
   - 持久化到本地存储
-- [ ] T045 [US5] 实现配置值加载逻辑 in track-screen/pages/config/index.vue
+- [x] T045 [US5] 实现配置值加载逻辑 in track-screen/pages/config/index.vue
   - 页面加载时调用 getConfig()
   - 恢复上次配置
-- [ ] T046 [US5] 播放页面响应配置变化 in track-screen/pages/display/index.vue
+- [x] T046 [US5] 播放页面响应配置变化 in track-screen/pages/display/index.vue
   - 从 storage 读取最新配置
   - 应用字体大小、分栏数量等
 
@@ -269,21 +269,21 @@
 
 ### UI 实现（界面优先）
 
-- [ ] T047 [P] [US6] 实现隐藏设置按钮 UI in track-screen/pages/display/index.vue
+- [x] T047 [P] [US6] 实现隐藏设置按钮 UI in track-screen/pages/display/index.vue
   - 右上角定位
   - 默认透明/隐藏
   - hover 或 touch 时显示
 
 ### 功能实现
 
-- [ ] T048 [US6] 实现鼠标/触摸检测 in track-screen/pages/display/index.vue
+- [x] T048 [US6] 实现鼠标/触摸检测 in track-screen/pages/display/index.vue
   - H5: mousemove 事件监听
   - App: touchstart 事件监听
   - 检测右上角区域
-- [ ] T049 [US6] 实现按钮显示/隐藏逻辑 in track-screen/pages/display/index.vue
+- [x] T049 [US6] 实现按钮显示/隐藏逻辑 in track-screen/pages/display/index.vue
   - 靠近时显示（opacity 过渡）
   - 离开后延迟隐藏
-- [ ] T050 [US6] 实现返回配置页面逻辑 in track-screen/pages/display/index.vue
+- [x] T050 [US6] 实现返回配置页面逻辑 in track-screen/pages/display/index.vue
   - 停止所有定时器
   - 跳转回 config 页面
   - 保留当前选择
@@ -296,11 +296,11 @@
 
 **Purpose**: 完善细节，安卓平台适配
 
-- [ ] T051 [P] 代码清理和注释 in track-screen/
-- [ ] T052 [P] 添加 loading 状态和骨架屏 in track-screen/pages/
-- [ ] T053 [P] 添加错误边界处理 in track-screen/pages/
+- [x] T051 [P] 代码清理和注释 in track-screen/
+- [x] T052 [P] 添加 loading 状态和骨架屏 in track-screen/pages/
+- [x] T053 [P] 添加错误边界处理 in track-screen/pages/
 - [ ] T054 安卓真机测试和问题修复 in track-screen/
-- [ ] T055 条件编译处理平台差异 in track-screen/（使用 #ifdef APP-PLUS）
+- [x] T055 条件编译处理平台差异 in track-screen/（使用 #ifdef APP-PLUS）
 - [ ] T056 [P] 更新 quickstart.md 验证清单 in specs/001-track-screen/quickstart.md
 - [ ] T057 打包 H5 版本验证 in track-screen/
 - [ ] T058 打包安卓 APK in track-screen/
