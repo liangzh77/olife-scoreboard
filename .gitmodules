@@ -4,3 +4,6 @@
 [submodule "track-screen"]
 	path = track-screen
 	url = http://192.168.3.139/olife-universe/track-screen.git
+[submodule "events-live-server-sdk"]
+	path = events-live-server-sdk
+	url = http://192.168.3.139/olife-universe/events-live-server-sdk
