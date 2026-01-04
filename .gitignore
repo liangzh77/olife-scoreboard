@@ -25,3 +25,5 @@ npm-debug.log*
 Thumbs.db
 *.swp
 *.tmp
+package-lock.json
+package.json
